@@ -18,10 +18,11 @@ var counter = {
 function countLetters(counter, sample_text) {
   // FIX ME
   let textToCount = sample_text.toLowerCase().replace(/\s.,/g);
-  console.log(textToCount);
+
   if (textToCount.length === 0) {
     return;
   }
+  
   if (counter.hasOwnProperty(textToCount[textToCount.length - 1])) {
     counter[textToCount[textToCount.length - 1]]++
   }
